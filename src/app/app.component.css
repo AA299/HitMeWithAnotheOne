@@ -84,3 +84,29 @@ mat-toolbar{
   font-family: 'Oswald', sans-serif !important;
 }
 
+
+.credits footer {
+  position: absolute;
+  bottom: 45px;
+  right: 2%;
+  font-family: 'Ubuntu', sans-serif !important;
+
+  text-align: left;
+  font-size: 1em;
+  /* text-transform: uppercase; */
+}
+
+strong{
+  color:rgba(255, 255, 255, .65);
+}
+
+a {
+  color: rgba(255, 255, 255, .75);
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+}
+a:hover {
+    color: white;
+    font-weight:700;
+    font-size:1.2em;
+  }
