@@ -1,4 +1,5 @@
-<div ngxAnimatedGradient class="bg">
+
+<div ngxAnimatedGradient class="bg" (mousemove)="fireEvent($event)">
   <mat-toolbar>
     <h2 id="toolbar">Hit Me With Another One</h2>
     <span class="spacer"></span>
@@ -7,6 +8,10 @@
     </button>
 
   </mat-toolbar>
+
+  <div id="cursor"
+  [ngStyle]="{'top.px': getY(),'left.px': getX()}"
+  ></div>
 
 
   <div *ngIf="loaderService.isLoading | async">

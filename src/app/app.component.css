@@ -1,3 +1,23 @@
+*
+{
+  overflow: hidden;
+  cursor: none;
+}
+
+#cursor{
+  top: 100;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  transition: 0.1s;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -109,4 +129,4 @@ a:hover {
     color: white;
     font-weight:700;
     font-size:1.2em;
-  }
+}

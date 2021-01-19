@@ -14,6 +14,10 @@ export class AppComponent {
   punchline:string = '';
   audioObj = new Audio();
 
+  cursor = {
+    x: 100,
+    y: 100
+  };
 
   constructor(private jokeApiService: JokeApiService, public loaderService: LoaderService){
 
@@ -38,6 +42,22 @@ export class AppComponent {
 
   OnFav(){
     window.open("https://github.com/tuminzee/HitMeWithAnotheOne")
+  }
+
+
+  //Bad Code change this in the future
+  fireEvent(e: MouseEvent){
+    this.cursor.x = e.clientX;     // Get the horizontal coordinate
+    this.cursor.y = e.clientY;
+    console.log(this.cursor);
+  }
+
+  getX(){
+    return this.cursor.x;
+  }
+
+  getY(){
+    return this.cursor.y;
   }
 
 }
